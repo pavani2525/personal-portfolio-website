@@ -1,0 +1,302 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:90px 8%;
+    min-height:90vh;
+}
+
+.left{
+    width:55%;
+}
+
+.left h3{
+    color:#60a5fa;
+    font-size:28px;
+}
+
+.left h1{
+    font-size:60px;
+    margin:15px 0;
+}
+
+.left h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.left p{
+    color:#d1d5db;
+    line-height:30px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:30px;
+    transition:.4s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#2563eb;
+    box-shadow:0 0 15px #3b82f6;
+}
+
+/* Profile */
+
+.right img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:8px solid #3b82f6;
+    object-fit:cover;
+    box-shadow:0 0 25px #2563eb;
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#60a5fa;
+}
+
+/* Cards */
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:15px;
+    line-height:30px;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+}
+
+/* Education */
+
+.edu{
+    background:#1e293b;
+    margin:20px auto;
+    padding:25px;
+    border-left:6px solid #3b82f6;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.edu h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.edu p{
+    margin:8px 0;
+}
+
+/* Skills */
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    width:170px;
+    text-align:center;
+    padding:25px;
+    border-radius:15px;
+    font-size:20px;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.skill:hover{
+    background:#2563eb;
+    transform:scale(1.08);
+}
+
+/* Projects */
+
+.project{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project p{
+    line-height:28px;
+}
+
+/* Certificates */
+
+.certificate{
+    background:#1e293b;
+    padding:25px;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+.certificate:hover{
+    background:#2563eb;
+}
+
+/* Contact */
+
+.contact{
+    background:#1e293b;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.contact p{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    color:white;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    padding:20px;
+    text-align:center;
+    color:#d1d5db;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.left{
+    width:100%;
+}
+
+.left h1{
+    font-size:42px;
+}
+
+.right img{
+    width:250px;
+    height:250px;
+    margin-bottom:30px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.skill{
+    width:140px;
+}
+}
